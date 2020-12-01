@@ -64,7 +64,8 @@
             <div class="font-weight-bold list-p float-left text-dark custom-wid-3 my-2">Envoyer le document par courriel - (PHASE 2)</div>
           </div>
           <div class="pdf-viewer">
-            <b-embed type="iframe" aspect="16by9" src="http://www.africau.edu/images/default/sample.pdf" allowfullscreen></b-embed>
+            <!-- <b-embed type="iframe" aspect="16by9" src="http://www.africau.edu/images/default/sample.pdf" allowfullscreen></b-embed> -->
+            <iframe src="https://s25.q4cdn.com/967830246/files/doc_downloads/test.pdf" width="100%" height="1000px"></iframe>
           </div>
         </div>      
       </div>
