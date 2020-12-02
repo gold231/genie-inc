@@ -40,17 +40,14 @@
           <div class="shadow float-left lefttab">
           </div>
           <div class="">
-            <p class="mt-3 mb-0">PHASE 2</p>
-            <p class="text-gray1 mb-0"> Statistiques du recruteur</p>
+            <p class="mt-3 mb-0">&nbsp;</p>
           </div>
         </div>
         <div class="custom-width-3 float-left mb-3">
-          <div class="shadow float-left lefttab items justify-center">
-            <p class="text-gray1 mb-0" style="font-size: 30px;">+</p>
+          <div class="shadow float-left lefttab">
           </div>
           <div class="">
-            <p class="mt-3 mb-0">PHASE 2</p>
-            <p class="text-gray1 mb-0">+ Page statistique</p>
+            <p class="mt-3 mb-0">&nbsp;</p>
           </div>
         </div>
       </div>

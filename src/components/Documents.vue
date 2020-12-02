@@ -1,73 +1,86 @@
 <template>
   <div class="home">
-      <Toptab />
-      <b-row class="border mt-3 mx-0 py-3">
-        <div class="col-lg-3"></div>
-        <div class="col-lg-6">
-            <b-row class="items">
-                <b-col>
-                    <b-dropdown left text="Mes offres d’emploi" variant="outline">
-                        <b-dropdown-item href="/">
-                          <b-dropdown-form class="pl-4"> Toutes mes offres</b-dropdown-form> 
-                        </b-dropdown-item>
-                        <b-dropdown-item href="/">
-                          <b-dropdown-form class="pl-4">Offres actives</b-dropdown-form> 
-                        </b-dropdown-item>
-                        <b-dropdown-item href="" >
-                          <b-dropdown-form class="bg-dark text-white">
-                            <img class="mr-1" src="../assets/img/ajouter_.png" width="24">Ajouter une offre
-                          </b-dropdown-form>
-                        </b-dropdown-item>
-                    </b-dropdown>
-                </b-col>
-                <b-col>
-                  <b-link href="#/candidatures" class="text-dark" style="text-decoration: none;">Mes candidatures</b-link>
-                </b-col>
-                <b-col>
-                  <b-link class="text-dark" style="text-decoration: none;">Facturation</b-link>                    
-                </b-col>
-            </b-row>
-        </div>
-        <div class="col-lg-3"></div>
-    </b-row>
+    <Toptab />
+    <Menu />
     <b-row class="my-5 mx-0">
       <div class="col-lg-3 col-md-12 pb-3">
-        <div class="border p-3">
-          <Lefttab />
+        <div class="border text-left p-3">
+          <div class="items border-bottom">
+              <img src="../assets/img/candidature.png" width="65">
+              <h5 class="font-weight-bold mb-0">Candidatures reçus</h5>
+          </div>
+          <div class="border-bottom mt-3">
+              <p class="font-weight-bold">Pour le poste :</p>            
+              <b-dropdown variant="outline" text="Titre du poste" class="drop-bold"></b-dropdown>
+          </div>
+          <div class="mt-3">
+              <p class="font-weight-bold">Filtrer vos candidats par :</p>
+              <b-dropdown text="Nouvelles candidatures" variant="outline" class="text-dark border w-100">
+              </b-dropdown>
+          </div>
+          <div class="border bg-gray px-5 py-3 mt-3">
+              <p class="font-weight-bold mb-0">Listes des candidats correspondant :</p>
+          </div>
+          <div v-for="(item, key) in typeArray" :key="key" :value="item" class="border-bottom">
+              <p class="font-weight-bold my-1">{{ item.key1 }}</p>
+              <p class="text-red mb-1">{{ item.key2 }}</p>
+              <p class="text-dark mb-1">{{ item.key3 }}</p>
+              <b-button-group class="text-left">
+                <b-button variant="light" href="#">Intéressé</b-button>
+                <b-button variant="light" href="#" class="border-left">Archivé</b-button>
+              </b-button-group>
+          </div>
         </div>
       </div>      
       <div class="col-lg-9 col-md-12">
         <div class="bg-gray text-left p-3 mb-5">
-          <Sectoptab />
-        </div>
-        <div class="">
-          <b-list-group horizontal="md" class="list-items">
-            <b-list-group-item class="bg-gray list-item first-item mr-1" href="#/documents">Documents du candidat</b-list-group-item>
-            <b-list-group-item class="bg-gray list-item mr-1" href="#/qualifications">Qualifications</b-list-group-item>
-            <b-list-group-item class="bg-gray list-item mr-1" href="#/questions">Questions de présélections</b-list-group-item>
-            <b-list-group-item class="bg-gray list-item mr-1" href="#/motivations">Motivations du candidat</b-list-group-item>
-          </b-list-group>  
-        </div>    
-        <div class="border">
-          <div class="overflow-auto p-3">
-            <div class="float-left custom-wid-1">
-              <p class="font-weight-bold float-left my-2">Documents :</p>
-              <div class="float-left ml-3">
-                <b-dropdown text="John.Doe.pdf" variant="outline" class="border w-100">
-                </b-dropdown>
+          <h4 class="text-dark">Roger Desjardins</h4>
+          <p class="text-dark">Ingénieur civil</p>
+          <p class="mb-1"><span class="font-weight-bold">Téléphone :</span> 438-883-3331</p> 
+          <p class="mb-1"><span class="font-weight-bold">Courriel :</span> nomcandidat@gmail.com</p>          
+          <p><span class="font-weight-bold">Peut déménager :</span> oui</p> 
+          <div class="row button-menu items">
+              <div class="col-md-2 list-p border-right" v-b-modal.modal-action>Intéressé</div>
+              <div class="col-md-2 list-p border-right" v-b-modal.modal-permet>Contacter</div>
+              <div class="col-md-4 list-p" v-b-modal.modal-action>Candidature envoyé le : 10 novembre 2020</div>
+              <div class="col-md-2 list-p border-right" v-b-modal.modal-action>Ajouter un commentaire</div>
+              <div class="col-md-2 list-p" v-b-modal.modal-action>Archivé</div>
+          </div>  
+          <!-- <b-button-group >
+              <b-button variant="light" href="#">Intéressé</b-button>
+              <b-button variant="light" href="#" class="border-left">Contacter</b-button>
+              <b-button variant="light" href="#" class="border-left">Candidature envoyé le : 10 novembre 2020</b-button>
+              <b-button variant="light" href="#" class="border-left">Ajouter un commentaire</b-button>
+              <b-button variant="light" href="#" class="border-left">Archivé</b-button>
+          </b-button-group>                     -->
+          <b-modal id="modal-action" hide-footer hide-header>
+              <div class="text-center">
+                  <h4>L’action de ce bouton n’est pas disponible sur le prototype</h4>
               </div>
-            </div>
-            <div class="float-left custom-wid-2">
-              <p class="font-weight-bold list-p text-center float-left px-3 my-2">Imprimer</p>
-              <p class="font-weight-bold list-p text-center float-left px-3 my-2">Télécharger</p>
-            </div>
-            <div class="font-weight-bold list-p float-left text-dark custom-wid-3 my-2">Envoyer le document par courriel - (PHASE 2)</div>
-          </div>
-          <div class="pdf-viewer">
-            <!-- <b-embed type="iframe" aspect="16by9" src="http://www.africau.edu/images/default/sample.pdf" allowfullscreen></b-embed> -->
-            <iframe src="https://s25.q4cdn.com/967830246/files/doc_downloads/test.pdf" width="100%" height="1000px"></iframe>
-          </div>
-        </div>      
+          </b-modal>   
+          <b-modal id="modal-permet" hide-footer hide-header>
+              <div class="text-center">
+                  <h4 class="font-weight-bold mb-3">Permet d’envoyer un courriel au candidat</h4>
+                  <p class="font-weight-bold list-bold">Phase 2 : Message automatisé</p>
+              </div>
+          </b-modal>
+        </div>  
+        <b-card no-body>
+          <b-tabs v-model="tabIndex" card class="mytabs">
+            <b-tab title="Documents du candidat">
+              <DocumentsDu />
+            </b-tab>
+            <b-tab title="Qualifications">
+              <DocumentsQualifications />
+            </b-tab>
+            <b-tab title="Questions de présélections">
+              <DocumentsQuestions />
+            </b-tab>
+            <b-tab title="Motivations du candidat">
+              <DocumentsMotivations />
+            </b-tab>
+          </b-tabs>
+        </b-card>  
       </div>
     </b-row>
   </div>
@@ -75,36 +88,45 @@
 
 <script>
 import Toptab from "./Toptab.vue"
-import Lefttab from "./Lefttab.vue"
-import Sectoptab from "./Sectoptab.vue"
+import Menu from "./Menu.vue"
+import DocumentsDu from "./Documents-du.vue"
+import DocumentsQualifications from "./Documents-qualifications.vue"
+import DocumentsQuestions from "./Documents-questions.vue"
+import DocumentsMotivations from "./Documents-motivations.vue"
 // import pdf from 'vue-pdf'
 export default {
   name: 'Documents',
   components: {
     Toptab,
-    Lefttab,
-    Sectoptab,
-    // pdf,
+    Menu,
+    DocumentsDu,
+    DocumentsQualifications,
+    DocumentsQuestions,
+    DocumentsMotivations
   },
   data() {
-    return {}
+    return {
+      tabIndex: 0,
+      typeArray: [
+        { key1: 'Roger Desjardins', key2: 'Ingénieur civil', key3: 'Montréal' },
+        { key1: 'Roger Desjardins', key2: 'Ingénieur civil', key3: 'Montréal' },
+        { key1: 'Roger Desjardins', key2: 'Ingénieur civil', key3: 'Montréal' },
+        { key1: 'Roger Desjardins', key2: 'Ingénieur civil', key3: 'Montréal' },
+        { key1: 'Roger Desjardins', key2: 'Ingénieur civil', key3: 'Montréal' },
+        { key1: 'Roger Desjardins', key2: 'Ingénieur civil', key3: 'Montréal' },
+        { key1: 'Roger Desjardins', key2: 'Ingénieur civil', key3: 'Montréal' },
+        { key1: 'Roger Desjardins', key2: 'Ingénieur civil', key3: 'Montréal' },
+      ]
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.custom-wid-1 {
-  width: 33%;
-}
-.custom-wid-2 {
-  width: 27%;
-}
-.custom-wid-3 {
-  width: 40%;
-}
-@media (max-width: 576px) {
-  .custom-wid-1, .custom-wid-2, .custom-wid-3 {
-    width: 100%;
+.button-menu {
+  text-align: center;
+  @media (max-width: 767px) {
+    text-align: left;
   }
 }
 </style>

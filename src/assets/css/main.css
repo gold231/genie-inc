@@ -100,19 +100,6 @@
     }
 }
 
-
-.list-items > .list-item {
-    border-top-right-radius: 20px !important;
-    border-top-left-radius: 20px !important;
-    width: auto;
-}
-.list-items > .first-item {
-    background-color: #000;
-    color: white;
-}
-.box-1 {  
-    width: 40%;
-}
 .list-items-1 > .list-item-1 {
     border: none !important; 
 }
