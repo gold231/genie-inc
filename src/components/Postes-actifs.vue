@@ -7,9 +7,9 @@
                     <p class="list-p mb-0 p-1">En ligne : {{ item.key1 }}</p>              
                     <p class="list-bold font-weight-bold mb-0 p-1">Montréal</p>
                     <b-button-group>
-                        <b-button variant="light" href="#/candidatures" class="list-p">Candidatures (45)</b-button>
-                        <b-button variant="light" class="list-p border-left">Modifier</b-button>
-                        <b-button variant="light" @click="handle" class="list-p border-left">Archiver</b-button>
+                        <b-button variant="light" href="#/candidatures" class="list-p button-background font-weight-bold" style="color: #6E6C92;">Candidatures(45)</b-button>
+                        <b-button variant="light" class="list-p button-background font-weight-bold border-left" style="color: #6E6C92;">Modifier</b-button>
+                        <b-button variant="light" @click="handle" class="list-p font-weight-bold border-left">Archiver</b-button>
                     </b-button-group>
                 </b-col>                
                 <b-col class="my-3">

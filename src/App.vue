@@ -19,6 +19,9 @@
   background-color: #FCFCFC;
   margin-top: 60px;
 }
+.tabs.mytabs .card-body {
+  padding: 0;
+}
 .tabs.mytabs .nav-tabs .nav-link.active {
   background-color: #000;
   color: white;
@@ -35,5 +38,11 @@
 }
 .text-black {
   color: #000;
+}
+.text-gray-1 {
+  color: #6E6C92;
+}
+.button-bold > button {
+  font-weight: bold;
 }
 </style>

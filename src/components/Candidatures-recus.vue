@@ -7,9 +7,9 @@
                     <p class="list-p mb-0 p-1">Candidature envoyé le : {{ item.key2 }}</p>              
                     <p class="list-bold font-weight-bold mb-0 p-1">Ingénieur civil</p>
                     <b-button-group>
-                        <b-button variant="light" href="#" class="list-p" v-b-modal.modal-candidature>Intéressé</b-button>
-                        <b-button variant="light" href="#" class="list-p border-left" v-b-modal.modal-permet>Contacter</b-button>
-                        <b-button variant="light" class="list-p border-left" v-b-modal.modal-candidature>Archivés</b-button>
+                        <b-button variant="light" href="#" class="list-p font-weight-bold" style="color: #6E6C92;" v-b-modal.modal-candidature>Intéressé</b-button>
+                        <b-button variant="light" href="#" class="list-p font-weight-bold border-left" style="color: #6E6C92;" v-b-modal.modal-permet>Contacter</b-button>
+                        <b-button variant="light" class="list-p font-weight-bold border-left" v-b-modal.modal-candidature>Archivés</b-button>
                     </b-button-group>
                 </div>
                 <div class="col-sm-4 text-left">

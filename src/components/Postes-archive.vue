@@ -7,9 +7,9 @@
                     <p class="list-p mb-0 p-1">En ligne : {{ item.key1 }}</p>              
                     <p class="list-bold font-weight-bold mb-0 p-1">Montréal</p>
                     <b-button-group>
-                        <b-button variant="light" href="#/candidatures" class="list-p">Candidatures (45)</b-button>
-                        <b-button variant="light" href="#" class="list-p border-left">Remettre ce poste en ligne</b-button>
-                        <b-button variant="light" href="#" class="list-p border-left">Supprimer définitivement</b-button>
+                        <b-button variant="light" href="#/candidatures" class="list-p font-weight-bold" style="color: #6E6C92;">Candidatures (45)</b-button>
+                        <b-button variant="light" class="list-p font-weight-bold border-left" style="color: #6E6C92;">Remettre ce poste en ligne</b-button>
+                        <b-button variant="light" class="list-p font-weight-bold border-left">Supprimer définitivement</b-button>
                     </b-button-group>
                 </b-col>                
                 <b-col class="my-3">
