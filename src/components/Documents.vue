@@ -25,10 +25,6 @@
               <p class="font-weight-bold my-1">{{ item.key1 }}</p>
               <p class="text-red font-weight-bold mb-1">{{ item.key2 }}</p>
               <p class="text-dark mb-1">{{ item.key3 }}</p>
-              <!-- <b-button-group class="">
-                <b-button variant="light" href="#" class="font-weight-bold" style="color: #6E6C92;">Intéressé</b-button>
-                <b-button variant="light" href="#" class="font-weight-bold button-right border-left" style="color: #6E6C92;">Archivé</b-button>
-              </b-button-group> -->
               <div class="overflow-auto">
                 <b-link class="font-weight-bold text-decoration-none text-gray-1 float-left" href="#">Intéressé</b-link>
                 <b-link class="font-weight-bold text-decoration-none text-gray-1 float-right" href="#">Archivé</b-link>
@@ -50,13 +46,6 @@
               <div class="col-md-2 list-p font-weight-bold border-right" v-b-modal.modal-action>Ajouter un commentaire</div>
               <div class="col-md-2 list-p font-weight-bold " v-b-modal.modal-action>Archivé</div>
           </div>  
-          <!-- <b-button-group >
-              <b-button variant="light" href="#">Intéressé</b-button>
-              <b-button variant="light" href="#" class="border-left">Contacter</b-button>
-              <b-button variant="light" href="#" class="border-left">Candidature envoyé le : 10 novembre 2020</b-button>
-              <b-button variant="light" href="#" class="border-left">Ajouter un commentaire</b-button>
-              <b-button variant="light" href="#" class="border-left">Archivé</b-button>
-          </b-button-group>                     -->
           <b-modal id="modal-action" hide-footer hide-header>
               <div class="text-center">
                   <h4>L’action de ce bouton n’est pas disponible sur le prototype</h4>

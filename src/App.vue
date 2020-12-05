@@ -45,4 +45,41 @@
 .button-bold > button {
   font-weight: bold;
 }
+
+.style-chooser .vs__dropdown-toggle {
+  padding: 1%;
+}
+.style-chooser .vs__search::placeholder {
+  color: #AAAAAA;
+}
+.style-chooser .vs__dropdown-toggle
+{
+  background: #EFF1FC;
+  border: none;
+  color: #000;
+}
+.style-chooser .vs__dropdown-menu {
+  background-color: white;
+}
+.style-chooser .vs__selected {
+  background-color: #000;
+  color: white;
+}
+.style-chooser .vs__selected > button > svg {
+  fill: white;
+}
+.style-chooser .vs__clear,
+.style-chooser .vs__open-indicator {
+  fill: #394066;
+}
+
+.dropdown-left.dropdown > button {
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .list-p.dropdown > button {
+    font-size: 12px;
+  }  
+}
 </style>
