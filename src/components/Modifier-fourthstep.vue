@@ -7,7 +7,7 @@
         </div>
         <div class="circle-div">
             <div class="contact-width">
-                <h1 class="font-weight-bold">Questions de présélections</h1>
+                <h1 class="font-weight-bold">Vos options</h1>
                 <div class="p-5">
                     <b-row>
                         <b-col class="">

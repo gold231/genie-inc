@@ -163,8 +163,17 @@
                                     </div>
                                 </b-tab>
                                 <b-tab title="Anglais">
-                                    <!-- <PostesArchive /> -->
-                                    dsfadfad
+                                    <p class="font-weight-bold text-left m-3">B 
+                                        <span class="font-italic ml-3">I </span>
+                                        <span class="ml-3" style="text-decoration: underline;"> U </span>
+                                        <img class="ml-3" src="../assets/img/liste_a_puce.svg">
+                                        <img class="ml-3" src="../assets/img/liste_numero.svg">
+                                    </p>
+                                    <div class="p-3">
+                                        <div class="border justify-center collape cont-height text-left py-3 px-5">
+                                            <p class="cont-top">Description complète du poste</p>
+                                        </div>
+                                    </div>
                                 </b-tab>
                             </b-tabs>
                         </b-card>
