@@ -135,3 +135,19 @@
         padding: 3% 5%;
     }
 }
+
+.progressbar:after {
+    content: '';
+    width: 70%;
+    height: 6px;
+    background-color: #F2F2F2 ;
+    position: absolute;
+    right: 0;
+    top: 65px;
+    left: 15%;
+    z-index: 0;
+}
+
+.step-form {
+    z-index: 1;
+}

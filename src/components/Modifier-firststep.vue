@@ -7,18 +7,18 @@
         <div class="circle-div">
             <div class="contact-width">
                 <h1 class="font-weight-bold">Modifier votre offre D’emploi</h1>
-                <div class="p-5">
-                    <b-row>
+                <div class="p-5 position-relative">
+                    <b-row class="progressbar">
                         <b-col class="">
                             <div class="circle-div">
-                                <div class="circle button-ajouter text-white font-weight-bold">1</div>
+                                <div class="circle button-ajouter text-white font-weight-bold step-form">1</div>
                             </div>
                             <p class="font-weight-bold">Modifier votre offre d’emploi</p>
                         </b-col>                
                         <b-col class="">
                             <a href="#/modifier-second-step" class="text-decoration-none"> 
                                 <div class="circle-div">
-                                    <div class="circle bg-lightgray text-white">2</div>
+                                    <div class="circle bg-lightgray text-white step-form">2</div>
                                 </div>
                                 <p class="text-lightdark">Visualisation</p>
                             </a>
@@ -26,7 +26,7 @@
                         <b-col class="">
                             <a href="#/modifier-third-step" class="text-decoration-none"> 
                                 <div class="circle-div">
-                                    <div class="circle bg-lightgray text-white">3</div>
+                                    <div class="circle bg-lightgray text-white step-form">3</div>
                                 </div>
                                 <p class="text-lightdark">Questions de préselections</p>
                             </a>
@@ -34,7 +34,7 @@
                         <b-col class="">
                             <a href="#/modifier-fourth-step" class="text-decoration-none"> 
                                 <div class="circle-div">
-                                    <div class="circle bg-lightgray text-white">4</div>
+                                    <div class="circle bg-lightgray text-white step-form">4</div>
                                 </div>
                                 <p class="text-lightdark">Vos options</p>
                             </a>
@@ -179,40 +179,20 @@
                         </b-card>
                     </div>
                 </div>
-                <Buttons />  
-                <div class="mt-5 p-5 ">
-                    <div class="text-left">
-                        <h4 class="font-weight-bold text-gray">PHASE 2 :</h4>
-                        <p class="font-weight-bold">Recherche des disciplines par mots-clés entré par l’utilisateur</p>
-                    </div>
-                    <div class="text-left mt-4">
-                        <h4 class="font-weight-bold">Aidez-nous à trouver vos candidats:</h4>
-                        <p class="font-weight-bold" style="color: #AAAAAA;" >Disciplines</p>
-                    </div>
-                    <Select2  class="style-chooser" 
-                        placeholder="Choose a Mots-clés Option" 
-                        taggable 
-                        multiple 
-                        :options="motsOptions" 
-                    /> 
-                    <div class="border cont-note collape float-left my-3 py-3 px-5">
-                        <p class="font-weight-bold text-left list-max my-0">Note au programmeur:</p>
-                        <input type="text" id="phone" name="phone" class="form-control list- mt-3" placeholder="Nom de la compagnie">
-                        <p class="list-p text-left mt-3">Dropdown qui contient tous les compagnies enregistré + un lien  + "Ajouter une compagnie"</p>
-                    </div>                    
-                </div>                                      
+                <Buttons /> 
+                <!-- <Select2  class="style-chooser" placeholder="Choose a Mots-clés Option" taggable multiple :options="motsOptions" />                                  -->
             </div>
         </div>
     </b-container>
 </template>
 
 <script>
-import Select2 from 'vue-select';
+// import Select2 from 'vue-select';
 import Buttons from './Modifier-buttons.vue';
 export default {
     name: 'ModifierFirstStep',
     components: {
-        Select2,
+        // Select2,
         Buttons
     },
     data() {
