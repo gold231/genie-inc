@@ -10,7 +10,7 @@
                 <h1 class="font-weight-bold">Questions de présélections</h1>
                 <div class="p-5 position-relative">
                     <b-row class="progressbar">
-                        <b-col class="">
+                        <b-col lg="3" md="6" sm="12">
                             <a href="#/modifier-first-step" class="text-decoration-none"> 
                                 <div class="circle-div">
                                     <div class="circle bg-lightgray text-white step-form">1</div>
@@ -18,7 +18,7 @@
                                 <p class="text-lightdark">Modifier votre offre d’emploi</p>
                             </a>
                         </b-col>                
-                        <b-col class="">
+                        <b-col lg="3" md="6" sm="12">
                             <a href="#/modifier-second-step" class="text-decoration-none"> 
                                 <div class="circle-div">
                                     <div class="circle bg-lightgray text-white step-form">2</div>
@@ -26,13 +26,13 @@
                                 <p class="text-lightdark">Visualisation</p>
                             </a>
                         </b-col>                
-                        <b-col class="">
+                        <b-col lg="3" md="6" sm="12">
                             <div class="circle-div">
                                 <div class="circle button-ajouter text-white font-weight-bold step-form">3</div>
                             </div>
                             <p class="font-weight-bold">Questions de préselections</p>
                         </b-col>
-                        <b-col class="">
+                        <b-col lg="3" md="6" sm="12">
                             <a href="#/modifier-fourth-step" class="text-decoration-none"> 
                                 <div class="circle-div">
                                     <div class="circle bg-lightgray text-white step-form">4</div>

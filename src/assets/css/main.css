@@ -148,6 +148,12 @@
     z-index: 0;
 }
 
+@media (max-width: 991px) {
+    .progressbar:after {
+        background-color: transparent;
+    }
+}
+
 .step-form {
     z-index: 1;
 }
